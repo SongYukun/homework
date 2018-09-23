@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+  font-family: pangtouyu;
+  src : url('../fonts/pangtouyu.ttf');
+}
+@font-face {
+  font-family: keaiziti;
+  src :url('../fonts/kavayi.ttf');
+}
+/*header*/
+.top{
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+}
+.top .header{
+  width: 1140px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+.header a{
+  text-decoration: none;
+  color: #cccccc;
+}
+.header .left{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.header .btn{
+  color: #ffffff;
+  padding: 8px 12px;
+  margin-left: 5px;
+  background: #003B64;
+}
+/*myStyle*/
+#head{
+  width: 1140px;
+  margin: 0 auto;
+}
+#head .head_top{
+  width: 1140px;
+  height: 60px;
+  background-color: #EEEEEE;
+}
+.myStyle{
+  width:1140px;
+  height:72px;
+  line-height:72px;
+  display:flex;
+  justify-content: space-between;
+  background: #ffffff;
+}
+.myStyle h1{
+  font-size: 2.5em;
+  color:#007DD3;
+  margin-left: 20px;
+}
+.myStyle .input{
+  width: 389px;
+  height: 36px;
+  margin-top:17px;
+  margin-right: 10px;
+}
+/*nav*/
+.nav{
+  width:1140px;
+  height:47px;
+  line-height: 47px;
+  background: #003B64;
+}
+.nav ul{
+  list-style: none;
+}
+.nav ul li a{
+  display: block;
+  float: left;
+  padding:0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+.nav ul .right{
+  float: right;
+}
+.nav ul li a:hover{
+  color:#000000;
+  background:#FFF200;
+}

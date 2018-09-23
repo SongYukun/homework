@@ -1,0 +1,29 @@
+.content{
+  width: 1140px;
+  height: 500px;
+  margin: 0 auto;
+  background: #ccc;
+  box-sizing: border-box;
+  position: relative;
+}
+.content_text{
+  width: 1000px;
+  position: absolute;
+  top:32%;
+  left: 9%;
+  margin: 0 auto;
+  text-align: center;
+}
+.content h1{
+  font-size: 2em;
+  margin-top: 0;
+}
+p{
+  font-size: 14px;
+  color: #333;
+}
+.content_text>span>a{
+  display: block;
+  text-decoration: none;
+  color: #0000FF;
+}

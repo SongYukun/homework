@@ -1,0 +1,10 @@
+1.网站基本信息表：movie_site_info
+2.导航表：movie_site_info
+3.首页广告轮播：movie_carousel_item
+4.轮播右侧信息：movie_banner_right_info
+5.首页楼层信息：movie_floor_info
+6.首页--热播影视：hotmouse_index_product
+7.首页电视节目表：movie_tvprogram
+8.首页电视剧，电影，综艺，动漫左侧：tvplay_index_product
+9.首页右侧内容：movie_right
+10.用户信息表：movie_user

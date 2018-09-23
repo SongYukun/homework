@@ -1,0 +1,414 @@
+h1, h2, h3, h4, h5, h6, dl, dd, dt, ul, li, p{
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+
+}
+body{
+  font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+#pic:after, #variety:after, #manga:after, #mouse:after, #tvplay:after, #nav>ul.navCatalog, #top, #top div.titleright ul:after, #tvprogram>div.tvmain:after, #top:after, #nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contain{
+  width: 1140px;
+  margin: 0 auto;
+}
+.banner{
+  width: 1140px;
+  height: 355px;
+  background: rgba(0,0,0,.2);
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  /* color: #fff; */
+  color: #666;
+}
+/* 轮播图 */
+.banner_left {
+  width: 670px;
+  height: 360px;
+  float: left;
+  position: relative;
+}
+.banner_list li {
+  position: absolute;
+  display: none;
+  padding-left: 2px;
+}
+.banner_list li:first-child {
+  display: block;
+}
+.banner_icon {
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+  bottom: 20px;
+/*font-size:0;*/
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+.banner_icon i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.btn {
+  background: #fff;
+}
+.arrow {
+  display: none;
+  width: 30px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: rgba(0,0,0,.2);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+}
+.prve {
+  left: 18px;
+}
+.next {
+  right: 20px;
+}
+.arrow span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.prve_left {
+  margin: 25px 0 0 10px;
+  transform: rotate(45deg);
+}
+.next_right {
+  margin: 25px 0 0 5px;
+  transform: rotate(-135deg);
+}
+.arrow:hover {
+  background: #7C7171;
+}
+.banner:hover .arrow {
+  display: block;
+}
+.btn_act {
+  background: #db192a;
+}
+/* 轮播右侧 */
+.banner_right {
+  width: 470px;
+  height: 370px;
+  float: left;
+}
+.banner_right .text {
+  margin-top: 25px;
+}
+.banner_right .text ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.banner_right .text ul li {
+  height: 50px;
+}
+.banner_right .text ul li:hover {
+  background: #888888;
+}
+/*热播影视*/
+/*#hotmouse{
+  height: overflow;
+}*/
+#hotmouse .header{
+  border-bottom: 2px solid #aaa; 
+}
+#hotmouse h3{
+  padding-left: 10px;
+  line-height: 40px;
+  color: #666;
+}
+#hotmouse .hot,
+#hotmouse .hotmain{
+  display: inline-block;
+}
+#hotmouse .hot dl,
+#hotmouse .hotmain dl{
+  margin-left: 8px;
+  margin-top: 15px;
+  float: left;
+  position: relative;
+}
+#hotmouse .hot dl dt span,
+#hotmouse .hotmain dl dt span{
+  position: absolute;
+  background-color: rgba(200,200,200,0.5);
+  width: 180px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  padding: 0 1px;
+  font-size: 14px;
+}
+#hotmouse .hot dl dt span{
+  bottom: 39px;
+}
+#hotmouse .hotmain dl dt span{
+  bottom: 0px;
+}
+#hotmouse .hot dl dt img,
+#hotmouse .hotmain dl dt img{
+  display: block;
+  width: 180px;
+  height: 240px;
+}
+#hotmouse .hot dl dd a,
+#hotmouse .hotmain dl dd a{
+  display: block;
+  color: #222222;
+  background: #F8F8F8;
+  text-align: center;
+  padding: 10px 0; 
+  font-size: 14px;
+}
+#hotmouse .hot dl dd a:hover,
+#hotmouse .hotmain dl dd a:hover{
+  color: #00BE06;
+}
+/*电视节目*/
+#tvprogram .header{
+  height: 40px;
+  border-bottom: 2px solid #aaa;
+}
+#tvprogram .header>h3{
+  float: left;
+  padding-left: 10px;
+  line-height: 40px;
+  color: #666;
+}
+#tvprogram .header>span{
+  line-height: 40px;
+  margin-left: 15px;
+  color: #045F07;
+  margin-top: 6px;
+  display: inline-block;
+}
+#tvprogram .header p {
+  float: right;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #1540F0;
+}
+#tvprogram .tvmain{
+  display: inline-block; 
+}
+#tvprogram .tvmain a{
+  color: #1540F0;
+}
+#tvprogram .tvmain dl{
+  width: 380px;
+  height: 100px;
+  float: left;
+  border-bottom: 1px dashed #aaa;
+  display: block;
+}
+#tvprogram .tvmain dl dt {
+  float: left;
+  width: 83px;
+  height: 79px;
+  text-align: center;
+  /* padding-top: 20px; */
+  box-sizing: border-box;
+}
+#tvprogram .tvmain dl dt img {
+  width: 65px;
+  height: 50px;
+  display: block;
+  margin-left: 10px;
+  margin-top: 11px;
+}
+#tvprogram .tvmain dl dd p{
+  line-height: 30px;
+}
+#tvprogram .tvmain dl dd p>a{
+  padding: 0 5px;
+}
+#tvprogram .tvmain dl dd {
+  float: left;
+  height: 90px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+/*电视剧*/
+#variety>div.varietylf, #manga>div.mangalf,
+#mouse>div.mouself,
+#tvplay>div.tvplaylf{
+  float: left;
+  width: 860px;
+  margin-top: 10px;
+}
+#variety>div.varietyrt, #manga>div.mangart, 
+#mouse>div.mousert, 
+#tvplay>div.tvplayrt {
+  float: right;
+  width: 260px;
+  min-height: 200px;
+  margin-top: 10px;
+}
+#variety>div.varietylf>div.header, #manga>div.mangalf>div.header, #mouse>div.mouself>div.header, #tvplay>div.tvplaylf>div.header {
+  height: 40px;
+  border-bottom: 1px solid #aaa;
+}
+#variety>div.varietylf>div.header>h3, #manga>div.mangalf>div.header>h3, #mouse>div.mouself>div.header>h3, #tvplay>div.tvplaylf>div.header>h3 {
+  float: left;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 20px;
+}
+#variety>div.varietylf>div.header>ul, #manga>div.mangalf>div.header>ul, #mouse>div.mouself>div.header>ul, #tvplay>div.tvplaylf>div.header>ul {
+  overflow: hidden;
+  display: inline-block;
+}
+#variety>div.varietylf>div.header>ul>li, #manga>div.mangalf>div.header>ul>li, #mouse>div.mouself>div.header>ul>li, 
+#tvplay>div.tvplaylf>div.header>ul>li {
+  float: left;
+  margin-top: 9px;
+}
+#variety>div.varietylf>div.header>ul>li>a, #manga>div.mangalf>div.header>ul>li>a, #mouse>div.mouself>div.header>ul>li>a, #tvplay>div.tvplaylf>div.header>ul>li>a {
+  display: block;
+  line-height: 30px;
+  font-size: 15px;
+  padding: 0 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-bottom: 0px solid #aaa;
+  border-radius: 15px 15px 0 0;
+  color: #1540F0;
+}
+#mouse>div.mouself>div.header>p, #tvplay>div.tvplaylf>div.header>p {
+  float: right;
+  margin-top: 10px;
+}
+#mouse>div.mouself>div.header>p>a, #tvplay>div.tvplaylf>div.header>p>a {
+  font-size: 15px;
+  padding: 0 20px;
+  line-height: 30px;
+  color: #1540F0;
+}
+/*推荐分类*/
+#variety>div.varietylf>div.varietybody, #manga>div.mangalf>div.mangabody, #mouse>div.mouself>div.mousebody, #tvplay>div.tvplaylf>div.tvplaybody {
+  display: block;/*要隐藏*/
+}
+#variety>div.varietylf>div.varietybody, #manga>div.mangalf>div.mangabody, #mouse>div.mouself>div.mousebody, #tvplay>div.tvplaylf>.tab2,
+#tvplay>div.tvplaylf>.tab3,
+#tvplay>div.tvplaylf>.tab4{
+  display: none !important;
+}
+#variety>div.varietylf>div.varietybody>ul, #manga>div.mangalf>div.mangabody>ul, #mouse>div.mouself>div.mousebody>ul, #tvplay>div.tvplaylf>div.tvplaybody>ul {
+  overflow: hidden;
+}
+#variety>div.varietylf>div.varietybody>ul>li, #manga>div.mangalf>div.mangabody>ul>li, #mouse>div.mouself>div.mousebody>ul>li, #tvplay>div.tvplaylf>div.tvplaybody>ul>li {
+  width: 160px;
+  float: left;
+  margin: 5px 6px 0;
+  position: relative;
+}
+#variety>div.varietylf>div.varietybody>ul>li img, #manga>div.mangalf>div.mangabody>ul>li img, #mouse>div.mouself>div.mousebody>ul>li img, #tvplay>div.tvplaylf>div.tvplaybody>ul>li img {
+  width: 160px;
+  display: block;
+}
+#variety>div.varietylf>div.varietybody>ul>li span, #manga>div.mangalf>div.mangabody>ul>li span, #mouse>div.mouself>div.mousebody>ul>li span, #tvplay>div.tvplaylf>div.tvplaybody>ul>li span {
+    height: 20px;
+    width: 160px;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba(255,255,255,0.3);
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+}
+#variety>div.varietylf>div.varietybody>ul>li p, #manga>div.mangalf>div.mangabody>ul>li p, #mouse>div.mouself>div.mousebody>ul>li p, #tvplay>div.tvplaylf>div.tvplaybody>ul>li p {
+  line-height: 30px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  color: #1540F0;
+}
+/*电视剧排行榜*/
+#variety>div.varietyrt, #manga>div.mangart, #mouse>div.mousert, #tvplay>div.tvplayrt {
+  float: right;
+  width: 273px;
+  min-height: 200px;
+  margin-top: 10px;
+}
+#variety>div.varietyrt>div.header, #manga>div.mangart>div.header, #mouse>div.mousert>div.header, #tvplay>div.tvplayrt>div.header {
+  height: 40px;
+  overflow: hidden;
+  border-bottom: 1px solid #aaa;
+}
+#variety>div.varietyrt>div.header>h3, #manga>div.mangart>div.header>h3, #mouse>div.mousert>div.header>h3, #tvplay>div.tvplayrt>div.header>h3 {
+  float: left;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#variety>div.varietyrt>div.header>span, #manga>div.mangart>div.header>span, #mouse>div.mousert>div.header>span, #tvplay>div.tvplayrt>div.header>span {
+  float: right;
+  margin-top: 18px;
+}
+#variety>div.varietyrt>div.header>span a, #manga>div.mangart>div.header>span a, #mouse>div.mousert>div.header>span a, #tvplay>div.tvplayrt>div.header>span a {
+  line-height: 20px;
+  height: 20px;
+  padding: 0 10px;
+  color: #1540F0;
+}
+#variety>div.varietyrt>div.body>ul>li, #manga>div.mangart>div.body>ul>li, #mouse>div.mousert>div.body>ul>li, #tvplay>div.tvplayrt>div.body>ul>li {
+  height: 40px;
+}
+#variety>div.varietyrt>div.body>ul>li>a, #manga>div.mangart>div.body>ul>li>a, #mouse>div.mousert>div.body>ul>li>a, #tvplay>div.tvplayrt>div.body>ul>li>a {
+  display: block;
+  padding-left: 60px;
+  position: relative;
+  line-height: 43px;
+  font-size: 14px;
+  color: #1540F0;
+}
+#variety>div.varietyrt>div.body>ul>li>a>b, #manga>div.mangart>div.body>ul>li>a>b, #mouse>div.mousert>div.body>ul>li>a>b, #tvplay>div.tvplayrt>div.body>ul>li>a>b {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #1540F0;
+  text-align: center;
+  line-height: 19px;
+  border-radius: 5px;
+  font-size: 13px;
+  position: absolute;
+  left: 15px;
+  top: 11px;
+}
+#variety>div.varietyrt>div.body>ul>li>a>b.first, #manga>div.mangart>div.body>ul>li>a>b.first, #mouse>div.mousert>div.body>ul>li>a>b.first, #tvplay>div.tvplayrt>div.body>ul>li>a>b.first {
+  background-color: #FF5200;
+  color: #fff;
+}
+#variety>div.varietyrt>div.body>ul>li>a>span, #manga>div.mangart>div.body>ul>li>a>span, #mouse>div.mousert>div.body>ul>li>a>span, #tvplay>div.tvplayrt>div.body>ul>li>a>span {
+  padding: 0 10px;
+  color: #1540F0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

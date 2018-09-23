@@ -1,0 +1,14 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+}
+.my_header{
+  width: 100%;
+  height: 229px;
+}
+.my_footer{
+  width: 100%;
+  height: 267px;
+  margin-top: 25px;
+}
